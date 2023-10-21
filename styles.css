@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 20px 40px;
+    z-index: 1; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.menu a {
+    margin-right: 20px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
+    position: relative; 
+    transition: all 0.2s ease; 
+}
+
+.menu a:before, .menu a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: purple; 
+    transition: all 0.2s ease; 
+}
+
+.menu a:before {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+}
+
+.menu a:after {
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.menu a:hover:before, .menu a:hover:after {
+    transform: scaleX(1);
+}
+
+.menu a:visited {
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 50px; 
+    z-index: 2; 
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-family: 'Joyride W05 STD';
+    font-size: 96px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icon {
+    height: 30px; 
+    margin: 20px;
+    transition: transform 0.2s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+}
+
+footer p {
+    color: white; 
+    margin: 0 0 20px;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
